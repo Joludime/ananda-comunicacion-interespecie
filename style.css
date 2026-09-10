@@ -1,0 +1,85 @@
+/* ==================================================
+   ESTILOS GENERALES DE LA PÁGINA
+   ================================================== */
+
+/* 
+   BODY representa todo el contenido visible de la página.
+   Aquí establecemos características generales de la web.
+*/
+body {
+    background-color: beige; /* Color de fondo de toda la página */
+}
+
+   /*H1 selecciona el título principal de nuestra página.
+   En nuestro HTML contiene:
+   ANANDA
+   COMUNICACIÓN INTERESPECIES*/
+
+h1 {
+    text-align: center;              /* Centra horizontalmente el texto */
+    color: darkgreen;                /* Color general del texto del h1 */
+    font-size: 30px;                 /* Tamaño de letra del h1 */
+    font-family: Arial, sans-serif;  /* Tipo de letra utilizado */
+}
+
+
+   /*"Un espacio de conexión entre animales y seres humanos"*/
+
+.subtitulo {
+    text-align: center;  /* Centra el subtítulo */
+    color: darkgreen;    /* Cambia el color del texto a verde oscuro */
+    font-size: 25px;     /* Establece el tamaño de la letra */
+}
+
+ /*NOMBRE: ANANDA, Lo utilizamos para modificar solamente la palabra ANANDA
+   dentro de nuestro título principal.*/
+
+.nombre {
+    color: rgb(105, 72, 226); /* Color personalizado utilizando RGB */
+    font-size: 35px;           /* Tamaño de la palabra ANANDA */
+}
+
+   /*COMUNICACIÓN INTERESPECIES*/
+
+.especialidad {
+    font-size: 30px; /* Tamaño de la especialidad */
+}
+
+
+/* TÍTULOS DE LOS DESPLEGABLES, "¿Quién es Ananda?"
+ Al hacer clic sobre <summary>, el contenido de <details>
+   se abre o se cierra.*/ 
+   
+
+summary {
+    color: rgb(105, 72, 226); /* Color del título del desplegable */
+    font-size: 28px;           /* Tamaño del título del desplegable */
+
+}
+
+.leer-mas {
+    color: black;
+    font-size: 16px;
+}
+
+
+/* Boton de WhatsApp, margin-bottom:margen de boton 30 pixeles por debajo */
+.whatsapp {
+    display: inline-block;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+/* Limita el ancho de las secciones y las centra en la página */
+section {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header {
+    text-align: center;
+}
