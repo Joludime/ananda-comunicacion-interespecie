@@ -66,8 +66,8 @@ summary {
 /* Boton de WhatsApp, margin-bottom:margen de boton 30 pixeles por debajo */
 .whatsapp {
     display: inline-block;
-    margin-bottom: 30px;
-    font-size: 30px;
+    margin-bottom: 20px;
+    font-size: 16px;
 }
 
 /* Limita el ancho de las secciones y las centra en la página */
