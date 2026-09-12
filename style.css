@@ -1,60 +1,88 @@
-/* ==================================================
-   ESTILOS GENERALES DE LA PÁGINA
-   ================================================== */
+/*
+==================================================
+CÓDIGO ORIGINAL DESARROLLADO POR JOSÉ LUIS
+Se conserva como referencia y no afecta a la página
+==================================================
 
-/* 
-   BODY representa todo el contenido visible de la página.
-   Aquí establecemos características generales de la web.
-*/
+ESTILOS GENERALES DE LA PÁGINA
+
+BODY representa todo el contenido visible de la página.
+Aquí establecemos características generales de la web.
+
 body {
-    background-color: beige; /* Color de fondo de toda la página */
+    background-color: beige;
+    NOTA: Color de fondo de toda la página.
 }
 
-   /*H1 selecciona el título principal de nuestra página.
-   En nuestro HTML contiene:
-   ANANDA
-   COMUNICACIÓN INTERESPECIES*/
+H1 selecciona el título principal de nuestra página.
+En nuestro HTML contiene:
+ANANDA
+COMUNICACIÓN INTERESPECIE
 
 h1 {
-    text-align: center;              /* Centra horizontalmente el texto */
-    color: darkgreen;                /* Color general del texto del h1 */
-    font-size: 30px;                 /* Tamaño de letra del h1 */
-    font-family: Arial, sans-serif;  /* Tipo de letra utilizado */
+    text-align: center;
+    NOTA: Centra horizontalmente el texto.
+
+    color: darkgreen;
+    NOTA: Color general del texto del h1.
+
+    font-size: 30px;
+    NOTA: Tamaño de letra del h1.
+
+    font-family: Arial, sans-serif;
+    NOTA: Tipo de letra utilizado.
 }
 
-
-   /*"Un espacio de conexión entre animales y seres humanos"*/
+SUBTÍTULO:
+"Un espacio de conexión entre animales y seres humanos"
 
 .subtitulo {
-    text-align: center;  /* Centra el subtítulo */
-    color: darkgreen;    /* Cambia el color del texto a verde oscuro */
-    font-size: 25px;     /* Establece el tamaño de la letra */
+    text-align: center;
+    NOTA: Centra el subtítulo.
+
+    color: darkgreen;
+    NOTA: Cambia el color del texto a verde oscuro.
+
+    font-size: 25px;
+    NOTA: Establece el tamaño de la letra.
 }
 
- /*NOMBRE: ANANDA, Lo utilizamos para modificar solamente la palabra ANANDA
-   dentro de nuestro título principal.*/
+NOMBRE: ANANDA
+
+Lo utilizamos para modificar solamente la palabra ANANDA
+dentro de nuestro título principal.
 
 .nombre {
-    color: rgb(105, 72, 226); /* Color personalizado utilizando RGB */
-    font-size: 35px;           /* Tamaño de la palabra ANANDA */
+    color: rgb(105, 72, 226);
+    NOTA: Color personalizado utilizando RGB.
+
+    font-size: 35px;
+    NOTA: Tamaño de la palabra ANANDA.
 }
 
-   /*COMUNICACIÓN INTERESPECIES*/
+ESPECIALIDAD:
+COMUNICACIÓN INTERESPECIE
 
 .especialidad {
-    font-size: 30px; /* Tamaño de la especialidad */
+    font-size: 30px;
+    NOTA: Tamaño de la especialidad.
 }
 
+TÍTULOS DE LOS DESPLEGABLES:
+"¿Quién es Ananda?"
 
-/* TÍTULOS DE LOS DESPLEGABLES, "¿Quién es Ananda?"
- Al hacer clic sobre <summary>, el contenido de <details>
-   se abre o se cierra.*/ 
-   
+Al hacer clic sobre summary, el contenido de details
+se abre o se cierra.
 
 summary {
-    color: rgb(105, 72, 226); /* Color del título del desplegable */
-    font-size: 28px;           /* Tamaño del título del desplegable */
+    color: rgb(105, 72, 226);
+    NOTA: Color del título del desplegable.
 
+    font-size: 28px;
+    NOTA: Tamaño del título del desplegable.
+}
+
+ldador
 }
 
 .leer-mas {
@@ -62,17 +90,25 @@ summary {
     font-size: 16px;
 }
 
+BOTÓN DE WHATSAPP
 
-/* Boton de WhatsApp, margin-bottom:margen de boton 30 pixeles por debajo */
+margin-bottom representa el margen de 20 píxeles
+por debajo del botón.
+
 .whatsapp {
     display: inline-block;
     margin-bottom: 20px;
     font-size: 16px;
 }
 
-/* Limita el ancho de las secciones y las centra en la página */
+SECCIONES
+
+Limita el ancho de las secciones y las centra
+dentro de la página.
+
 section {
     max-width: 800px;
+
     margin-left: auto;
     margin-right: auto;
 
@@ -80,6 +116,416 @@ section {
     padding-right: 20px;
 }
 
+ENCABEZADO
+
 header {
     text-align: center;
 }
+
+==================================================
+FIN DEL CÓDIGO ORIGINAL
+==================================================
+*/ 
+
+/* =========================================
+   COLORES GENERALES
+   ========================================= */
+
+:root {
+    --turquesa: #168f8a;
+    --turquesa-oscuro: #0d6966;
+    --turquesa-claro: #dff6f3;
+    --verde: #1f5138;
+    --crema: #f7f1df;
+    --blanco: #fffdf8;
+    --texto: #29332d;
+    --texto-suave: #5d6861;
+    --sombra: 0 15px 35px rgba(42, 68, 56, 0.12);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding-bottom: 70px;
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(22, 143, 138, 0.15),
+            transparent 35%
+        ),
+        var(--crema);
+
+    color: var(--texto);
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* =========================================
+   ENCABEZADO
+   ========================================= */
+
+header {
+    position: relative;
+    padding: 80px 20px 70px;
+    overflow: hidden;
+    text-align: center;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: -160px;
+    right: -120px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: rgba(22, 143, 138, 0.14);
+    z-index: -1;
+}
+
+h1 {
+    margin: 0;
+    color: var(--verde);
+    font-family: Arial, sans-serif;
+    line-height: 1.15;
+}
+
+.nombre {
+    display: block;
+    color: var(--turquesa);
+    font-size: 65px;
+    letter-spacing: 8px;
+}
+
+.especialidad {
+    display: block;
+    margin-top: 10px;
+    font-size: 27px;
+    letter-spacing: 3px;
+}
+
+.subtitulo {
+    max-width: 650px;
+    margin: 25px auto 30px;
+    color: var(--verde);
+    font-family: Georgia, serif;
+    font-size: 26px;
+    line-height: 1.4;
+}
+
+/* =========================================
+   CONTENEDOR Y TARJETAS
+   ========================================= */
+
+.contenedor {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px 20px 50px;
+}
+
+.tarjeta {
+    margin: 22px 0;
+    padding: 30px;
+    border: 1px solid rgba(22, 143, 138, 0.15);
+    border-radius: 22px;
+    background-color: var(--blanco);
+    box-shadow: var(--sombra);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.tarjeta:hover {
+    border-color: rgba(22, 143, 138, 0.4);
+    box-shadow: 0 20px 45px rgba(42, 68, 56, 0.16);
+    transform: translateY(-3px);
+}
+
+h2 {
+    margin-top: 0;
+    color: var(--verde);
+    font-family: Georgia, serif;
+    font-size: 30px;
+    line-height: 1.3;
+}
+
+h3 {
+    margin-bottom: 8px;
+    color: var(--turquesa-oscuro);
+}
+
+/* =========================================
+   TARJETAS DESPLEGABLES
+   ========================================= */
+
+.desplegable > summary {
+    position: relative;
+    padding-right: 55px;
+    color: var(--turquesa);
+    font-family: Georgia, serif;
+    font-size: 29px;
+    font-weight: bold;
+    line-height: 1.3;
+    cursor: pointer;
+    list-style: none;
+}
+
+.desplegable > summary::-webkit-details-marker {
+    display: none;
+}
+
+.desplegable > summary::after {
+    content: "+";
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+
+    background-color: var(--turquesa);
+    color: white;
+
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+
+    transform: translateY(-50%);
+    transition:
+        transform 0.25s ease,
+        background-color 0.25s ease;
+}
+
+.desplegable[open] > summary::after {
+    transform: translateY(-50%) rotate(45deg);
+    background-color: var(--turquesa-oscuro);
+}
+
+.desplegable[open] > summary {
+    margin-bottom: 22px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid rgba(22, 143, 138, 0.2);
+}
+
+.desplegable p {
+    animation: aparecer 0.35s ease;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.leer-mas {
+    width: fit-content;
+    padding: 8px 16px;
+    border: 1px solid var(--turquesa);
+    border-radius: 30px;
+
+    color: var(--turquesa-oscuro);
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.leer-mas::after {
+    content: " +";
+}
+
+/* Evita mostrar dos símbolos en Leer más */
+
+.desplegable > .leer-mas::after {
+    position: static;
+    width: auto;
+    height: auto;
+    display: inline;
+    background: none;
+    color: inherit;
+    font-size: inherit;
+    transform: none;
+}
+
+.desplegable[open] > .leer-mas::after {
+    content: " −";
+    transform: none;
+}
+
+/* =========================================
+   LISTA Y TESTIMONIOS
+   ========================================= */
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 12px;
+    padding-left: 5px;
+}
+
+li::marker {
+    color: var(--turquesa);
+    font-size: 20px;
+}
+
+blockquote {
+    margin: 10px 0 25px;
+    padding: 16px 20px;
+    border-left: 5px solid var(--turquesa);
+    border-radius: 0 14px 14px 0;
+    background-color: var(--turquesa-claro);
+    font-family: Georgia, serif;
+    font-size: 18px;
+}
+
+/* =========================================
+   BOTONES DE WHATSAPP
+   ========================================= */
+
+.whatsapp {
+    min-height: 50px;
+    padding: 12px 22px;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #237b52;
+    color: white;
+
+    box-shadow: 0 10px 22px rgba(35, 123, 82, 0.25);
+
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.whatsapp:hover {
+    background-color: #19613f;
+    transform: translateY(-2px);
+}
+
+.whatsapp-flotante {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 100;
+
+    padding: 14px 20px;
+    border-radius: 30px;
+
+    background-color: #237b52;
+    color: white;
+    box-shadow: 0 12px 30px rgba(35, 123, 82, 0.35);
+
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: transform 0.2s ease;
+}
+
+.whatsapp-flotante:hover {
+    transform: translateY(-3px);
+}
+
+/* =========================================
+   ADAPTACIÓN PARA CELULARES
+   ========================================= */
+
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 60px 16px 45px;
+    }
+
+    .nombre {
+        font-size: 46px;
+        letter-spacing: 4px;
+    }
+
+    .especialidad {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    .subtitulo {
+        font-size: 22px;
+    }
+
+    .contenedor {
+        padding: 5px 14px 40px;
+    }
+
+    .tarjeta {
+        margin: 16px 0;
+        padding: 23px 20px;
+        border-radius: 18px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .desplegable > summary {
+        padding-right: 45px;
+        font-size: 25px;
+    }
+
+    .desplegable > summary::after {
+        width: 34px;
+        height: 34px;
+        font-size: 21px;
+    }
+
+    .whatsapp {
+        width: 100%;
+    }
+
+    .whatsapp-flotante {
+        right: 14px;
+        bottom: 14px;
+        padding: 14px 17px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+
